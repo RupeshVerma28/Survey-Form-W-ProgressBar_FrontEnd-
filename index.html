@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey with Progress Bar</title>
+</head>
+<body>
+    <div class="survey-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        
+        <form id="surveyForm">
+            <div class="step" id="step-1">
+                <h2>Question 1:</h2>
+                <p>How satisfied are you with our product?</p>
+                <input type="radio" name="q1" value="Very Satisfied" required> Very Satisfied<br>
+                <input type="radio" name="q1" value="Satisfied"> Satisfied<br>
+                <input type="radio" name="q1" value="Neutral"> Neutral<br>
+                <input type="radio" name="q1" value="Dissatisfied"> Dissatisfied<br>
+            </div>
+            
+            <div class="step" id="step-2">
+                <h2>Question 2:</h2>
+                <p>How often do you use our product?</p>
+                <input type="radio" name="q2" value="Daily" required> Daily<br>
+                <input type="radio" name="q2" value="Weekly"> Weekly<br>
+                <input type="radio" name="q2" value="Monthly"> Monthly<br>
+                <input type="radio" name="q2" value="Rarely"> Rarely<br>
+            </div>
+            
+            <div class="step" id="step-3">
+                <h2>Question 3:</h2>
+                <p>Would you recommend our product to others?</p>
+                <input type="radio" name="q3" value="Yes" required> Yes<br>
+                <input type="radio" name="q3" value="No"> No<br>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="thankYouMessage" class="thank-you">
+        <h2>Thank You For Your Feedback!</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

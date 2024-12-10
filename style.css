@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.survey-container {
+    color: #fafafa;
+    background: #1f1b33;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 15px rgb(252, 229, 22);
+}
+
+.progress-bar {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.step {
+    display: none;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+}
+
+#nextBtn {
+    background: #4caf50;
+    color: white;
+}
+
+.thank-you {
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #f18832;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 29, 29);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
